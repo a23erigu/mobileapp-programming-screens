@@ -4,30 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SecondActivity">
 
-    <Button
-        android:id="@+id/switchButton"
+    <TextView
+        android:id="@+id/textSentOver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Switch Activity"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="175dp"
+        android:text="there is suppose to be text here form main activity"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="381dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/mainActivityText" />
+        app:layout_constraintBottom_toTopOf="@id/textForSecondActivity"/>
 
     <TextView
-        android:id="@+id/mainActivityText"
+        android:id="@+id/textForSecondActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is the MainActivity"
-        tools:layout_editor_absoluteX="177dp"
-        tools:layout_editor_absoluteY="111dp"
-        app:layout_constraintTop_toBottomOf="@id/switchButton"
+        android:text="This is the SecondActivity"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="381dp"
+        app:layout_constraintTop_toBottomOf="@id/textSentOver"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
