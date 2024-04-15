@@ -18,9 +18,15 @@ public class MainActivity extends AppCompatActivity {
         switchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, SecondActivity.class));
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                intent.putExtra("name", "David");
+                intent.putExtra("job", "Shoemaker");
+                intent.putExtra("age", 23);
+                startActivity(intent);
             }
         });
+
+
     }
 
 
